@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #eee;
+  color: #111;
+}
+
+#letter1 {
+  color: #ff6384;
+}
+#letter2 {
+  color: #36a2eb;
+}
+#letter3 {
+  color: #ffce56;
+}
+#letter4 {
+  color: #9966ff;
+}
+#letter5 {
+  color: #4bc0c0;
+}
+
+.draggable-elements {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  height: 100px;
+}
+.draggable {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  cursor: grab;
+  transition: opacity 0.2s;
+}
+.draggable:active {
+  cursor: grabbing;
+}
+.draggable:hover {
+  opacity: 0.5;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+}
+
+.droppable-elements {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+.droppable {
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fff;
+  border: 3px dashed #111;
+  transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+}
+
+.droppable span {
+  font-size: 0.9rem;
+  pointer-events: none; /* The element is never the target of pointer events */
+}
+.startZone {
+  width: 80px;
+  height: 80px;
+  border-bottom: 1px solid black;
+  margin: 0.2rem;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  .draggable-elements {
+    margin: 1.5rem;
+  }
+}
