@@ -61,9 +61,9 @@ function handleTouchStart(e) {
 }
 
 function handleTouchMove(e) {
-    var touchLocation = e.targetTouches[0];
-    var pageX = (touchLocation.pageX - 50) + "px";
-    var pageY = (touchLocation.pageY - 50) + "px";
+    let touchLocation = e.targetTouches[0];
+    let pageX = (touchLocation.pageX - 50) + "px";
+    let pageY = (touchLocation.pageY - 50) + "px";
     e.target.style.position = "absolute";
     e.target.style.left = pageX;
     e.target.style.top = pageY;
@@ -100,8 +100,8 @@ function handleTouchEnd(e) {
 function detectTouchEnd(e, x1, y1) {
     //Very simple detection here
 
-    var changedTouch = e.changedTouches[0];
-    var elem = document.elementFromPoint(changedTouch.clientX, changedTouch.clientY);
+    let changedTouch = e.changedTouches[0];
+    let elem = document.elementFromPoint(changedTouch.clientX, changedTouch.clientY);
     if (elem) {
         if (elem.offsetLeft <= x1 + 40 && elem.offsetLeft >= x1 - 56 && elem.offsetTop <= y1 + 20 && elem.offsetTop >= y1 - 56) {
             return true;
