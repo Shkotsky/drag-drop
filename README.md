@@ -1,5 +1,18 @@
-# drag-drop
+# Drag-Drop  :dizzy:
 
-Drag and drop letters into words using Vanila JS "HTML Drag and Drop API" and "Touch events" for mobile.
+**Dragging** and **dropping** elements, in this case letters into words.
 
-If you like to see live <a href="https://codepen.io/marko-hristovski/pen/dyRLwbw">demo.</a>
+Works with native drag,  **mouse**  and **touch events**.
+
+**Desktop** and **mobile** friendly.
+
+## Build with:
+
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Web APIs** ( HTML Drag and Drop API and Touch events )
+
+
+
+If you like to see live <a href="https://codepen.io/marko-hristovski/pen/dyRLwbw"> **demo**.</a> :point_left:
